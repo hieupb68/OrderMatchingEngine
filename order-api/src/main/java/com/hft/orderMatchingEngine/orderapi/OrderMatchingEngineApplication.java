@@ -4,13 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
-@SpringBootApplication
-@ComponentScan(basePackages = {
-    "com.hft.orderMatchingEngine.orderapi",
-    "com.hft.orderMatchingEngine.common",
-    "com.hft.orderMatchingEngine.matching.engine",
-    "com.hft.orderMatchingEngine.storage"
-})
+@SpringBootApplication(scanBasePackages = "com.hft.orderMatchingEngine")
 public class OrderMatchingEngineApplication {
 
     public static void main(String[] args) {
